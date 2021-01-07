@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/spinner.css">
+<link rel="stylesheet" href="css/main.css">
+<title>Trump Quote</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>Trump Quote</header>
+
+        <section class="quotes">
+          <div class="quote-text" id="js-quote-text"></div><!--Diplay every quote -->
+        </section>
+
+        <div id="js-spinner" class="spinner hidden">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+        </div>
+
+        <section class="controls">
+            <button type="button" id="js-new-quote" class="new-quote button">Get Quote</button>
+            <!--Links-->
+
+            <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer"> <i class="fab fa-twitter logo">  Tweet it!</i></a>
+            <a class="whatsapp button" id="js-send" target="_blank" rel="noreferrer"> <i class="fa fa-whatsapp" aria-hidden="true"></i> Send it!</i></a>
+        </section>
+    </div>
+
+
+
+<div class="inner">
+    <button type="button" id="offline" data-loading-text="Loading..." class="btn btn-primary " autocomplete="off">
+       <i class="fa fa-wifi" aria-hidden="true"></i>  Your Connected!
+    </button>
+</div>
+
+    <script src="js/quote.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
